@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <Controls handleColorChange={handleColorChange}/>
       <AnalogClock />
-      <Draw />
+      <Draw color={color}/>
     </div>
   );
 }
