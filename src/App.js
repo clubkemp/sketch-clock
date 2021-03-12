@@ -6,9 +6,12 @@ import Controls from './components/Controls/Controls';
 
 
 function App() {
+  const handleColorChange = (e) =>{
+    console.log(e.target.value)
+  }
   return (
     <div className="App">
-      <Controls />
+      <Controls handleColorChange={handleColorChange}/>
       <AnalogClock />
       <Draw />
     </div>

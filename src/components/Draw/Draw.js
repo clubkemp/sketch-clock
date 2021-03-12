@@ -5,7 +5,12 @@ import CanvasDraw from "react-canvas-draw";
 export default function Draw() {
     return (
         <div>
-            <CanvasDraw canvasWidth={800} canvasHeight={800}/>
+            <CanvasDraw 
+                hideGrid={true}
+                canvasWidth={800} 
+                canvasHeight={800} 
+                hideInterface={true}
+            />
         </div>
     )
 }
